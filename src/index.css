@@ -1,0 +1,167 @@
+* {
+  padding-right: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: "Karla", "Inter", sans-serif;
+}
+
+.app {
+  position: relative;
+}
+
+.app .blob1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.app .blob2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.app .start-board {
+  width: 700px;
+  height: 700px;
+  background-color: #f5f7fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #293264;
+}
+
+.app .start-board .gameName {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+}
+
+.app .start-board .description {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.app .start-board .startBtn {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 45px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+}
+
+.app .start-board .startBtn:hover {
+  cursor: pointer;
+}
+
+.app .question-board {
+  width: 800px;
+  height: 800px;
+  background-color: #f5f7fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 75px;
+}
+
+.app .question-board .loadingText {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #293264;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.app .question-board .question-container {
+  padding: 20px;
+  border-bottom: 0.8px solid #dbdef0;
+}
+
+.app .question-board .question-container .question {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #293264;
+}
+
+.app .question-board .question-container .answers .answer-button {
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size: 11px;
+  border-radius: 10px;
+  margin: 0px 10px;
+  font-family: "Inter";
+  font-style: normal;
+  margin: 20px 5px 0px 5px;
+  background-color: transparent;
+  position: relative;
+  z-index: 100;
+  color: #293264;
+  cursor: pointer;
+}
+
+.app .question-board .button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.app .question-board .button-container .check-button {
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 11px;
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,124 @@
+* {
+  padding-right: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Karla", "Inter", sans-serif;
+}
+
+.app {
+  position: relative;
+  .blob1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .blob2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .start-board {
+    width: 700px;
+    height: 700px;
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #293264;
+    .gameName {
+      font-weight: 700;
+      font-size: 32px;
+      margin: 0;
+    }
+    .description {
+      font-weight: 400;
+      font-size: 16px;
+      margin-top: 12px;
+    }
+    .startBtn {
+      background-color: #4d5b9e;
+      color: #f5f7fb;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 12px 45px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .question-board {
+    width: 800px;
+    height: 800px;
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 75px;
+    .loadingText {
+      font-family: "Karla";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      color: #293264;
+      align-self: center;
+    }
+    .question-container {
+      padding: 20px;
+      border-bottom: 0.8px solid #dbdef0;
+      .question {
+        font-family: "Karla";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #293264;
+      }
+      .answers {
+        .answer-button {
+          padding: 6px 20px;
+          font-weight: 500;
+          font-size: 11px;
+          border-radius: 10px;
+          margin: 0px 10px;
+          font-family: "Inter";
+          font-style: normal;
+          margin: 20px 5px 0px 5px;
+          background-color: transparent;
+          position: relative;
+          z-index: 100;
+          color: #293264;
+          cursor: pointer;
+        }
+      }
+    }
+    .button-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      .check-button {
+        padding: 15px 30px;
+        font-weight: 500;
+        font-size: 11px;
+        background-color: #4d5b9e;
+        color: #f5f7fb;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
